@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.upper-container{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("bg-img.jpg");
+}
+
+.info{
+    color: rgba(255, 255, 255, 0.898);
+    text-align: center;
+}
+
+.info p{
+    margin-bottom: 20px;
+}
+
+.indicator{
+    height: 40px;
+    width: 450px;
+    margin: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+.indicator p:last-child{
+    color: white;
+}
+
+.income{
+    background-color: rgb(115, 247, 115);
+    border-radius: 10px;
+}
+
+.expenses{
+    background-color: rgb(248, 46, 46);
+    border-radius: 10px;
+}
+
+/* Styling the middle container */
+
+.middle-container{
+    width: 100%;
+    background-color: azure;
+    border-bottom: 0.5px solid rgb(233, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .middle-container {
+            width: 100%;
+            background-color: azure;
+            border-bottom: 0.5px solid rgb(233, 230, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .lower-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .income-container{
+            margin-bottom: 20px;
+            width: 60vw;
+        }
+        .expenses-container{
+            width: 60vw;
+        }
+
+        .income-details, .expenses-details{
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+select{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    margin: 10px 5px 10px 0;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.inputs{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    height: 35px;
+    margin: 10px 5px 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#submit{
+    padding: 5px 20px;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(239, 153, 121);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Styling lower container */
+
+.lower-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+        text-align: left;
+        font-size: 1rem;
+    }
+    
+.income-container{
+    width: 400px;
+    margin-right: 30px;
+}
+
+.expenses-container{
+    width: 400px;
+    margin-right: 30px;
+}
+
+.income-container h3{
+    color: rgb(5, 166, 5);
+    margin-bottom: 15px;
+}
+
+.expenses-container h3{
+    color: rgb(248, 46, 46);
+    margin-bottom: 15px;
+}
+
+.income-details,
+.expenses-details {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Level -->
+        <div class="upper-container">
+            <div class="info">
+                <p>Available Budget in January 2023:</p>
+                <h1 id="total-sum">
+                    + 0.00
+                </h1>
+            </div>
+            <div class="income indicator">
+                <p>TOTAL INCOME:</p>
+                <p id="income-indicator">+ 0.00</p>
+                <p></p>
+            </div>
+            <div class="expenses indicator">
+                <p>TOTAL EXPENSES:</p>
+                <p id="expenses-indicator">+ 0.00</p>
+                <p id="percentage">%</p>
+            </div>
+        </div>
+        <!-- Middle Level for Form -->
+        <div class="middle-container">
+                <select name="income-expenses" id="select">
+                    <option value="sel">Select</option>
+                    <option value="inc">Income</option>
+                    <option value="exp">Expenses</option>
+                </select>
+                <p id="root1"></p>
+                <input type="text" name="description" placeholder="Add Description..." class="inputs" id="desc" />
+                <p id="root2"></p>
+                <input type="number" name="value" placeholder="Value" class="inputs" id="amount" />
+                <p id="root3"></p>
+                <input type="submit" value="Submit" id="submit"/>
+
+        </div>
+
+        <!-- Lower level for indic -->
+        <div class="lower-container">
+            <div class="income-container">
+                <h3>INCOME</h3>
+               <div class="income-details">
+                    <div class="income-info"></div>
+                    <div class="income-amount"></div>
+               </div>
+            </div>
+            <div class="expenses-container">
+                <h3>EXPENSES</h3>
+            <div class="expenses-details">
+                <div class="expenses-info"></div>
+                <div class="income-amounts"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
